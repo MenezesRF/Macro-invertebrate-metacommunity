@@ -1,4 +1,4 @@
-# Macro-invertebrate-metacommunity
+# Macro-invertebrate metacommunity dynamics in ephemeral and intermittent river networks of Northeastern Brazil
 In this study, we compared metacommunity dynamics between an intermittent river network (IRN) and an ephemeral river network (ERN)  located in the Brazilian semi-arid region. 
 
 **Abstract**
