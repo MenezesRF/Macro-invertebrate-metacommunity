@@ -3,7 +3,9 @@
 ################################################################################
 ##
 ##  DESCRIPTION:
-##  Codes for testing P2 and generating FIGURE 4, that spatial β-diversity is higher ##  in ERN than in IRN whereas temporal β-diversity is lower in ERN than in IRN
+##  Codes for testing P2 and generating FIGURE 4, that spatial β-diversity is 
+##  higher in ERN than in IRN whereas temporal β-diversity is lower in ERN than
+##  in IRN
 ##  
 ################################################################################
 ## 
