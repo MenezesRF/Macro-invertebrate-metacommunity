@@ -1,7 +1,16 @@
-# ================================================================
-##  P2: Testing prediction P3 from FWB manuscript (Menezes et al.)
-## Figure: Figure 6 
-## ERN-ONLY MANTEL + PARTIAL MANTEL ANALYSIS  (simplified version)
+## MENEZES et al. (Freshwater Biology manuscript)
+
+################################################################################
+##
+##  DESCRIPTION:
+##  Codes for testing P3 and generating FIGURE 6, that species dispersal and  
+##  species sorting alternate temporally in the IRN, whereas species sorting 
+##  dominates in the ERN due to prolonged flow cessation 
+
+## ================================================================
+##
+## 
+## ERN-ONLY MANTEL + PARTIAL MANTEL ANALYSIS
 #
 # Macroinvertebrate beta diversity versus:
 #   1. Environmental distance
@@ -32,8 +41,8 @@ library(dplyr)
 library(tidyr)
 library(vegan)
 library(openxlsx)
-library(geosphere)
-library(betapart)
+library(geosphere) # provides functions for calculating geographic distances and other spatial measurements. It is used here to calculate distances between sampling sites based on their geographic coordinates.
+library(betapart) # provides functions for partitioning beta diversity into its main components, particularly species turnover and nestedness-resultant dissimilarity, based on presence–absence or abundance data. It is used here for the analyses of differences in community composition among sites.
 library(ggplot2)
 
 
@@ -1006,7 +1015,7 @@ p4_base1 <- ggplot(
 print(p4_base1)
 
 ggsave(
-  filename = "ERN_Partial_Mantel.tiff",
+  filename = "FIGURE_6_ERN_Partial_Mantel.tiff",
   plot = p4_base1,
   width = 12,
   height = 8,

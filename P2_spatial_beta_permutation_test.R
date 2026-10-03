@@ -1,6 +1,12 @@
+## MENEZES et al. (Freshwater Biology manuscript)
+
 ################################################################################
-##  P2: Testing prediction P2 from FWB manuscript (Menezes et al.)
-##. Figure: Figures 4 and 5
+##
+##  DESCRIPTION:
+##  Codes for testing P2 and generating FIGURE 4, that spatial β-diversity is higher ##  in ERN than in IRN whereas temporal β-diversity is lower in ERN than in IRN
+##  
+################################################################################
+## 
 ##  SPATIAL BETA DIVERSITY: ERN vs IRN
 ##  Site-level permutation test 
 ##
@@ -23,7 +29,7 @@ library(dplyr)
 library(tidyr)
 library(ggplot2)
 library(vegan)
-library(betapart)
+library(betapart) # provides functions for partitioning beta diversity into its main components, particularly species turnover and nestedness-resultant dissimilarity, based on presence–absence or abundance data. It is used here for the analyses of differences in community composition among sites.
 
 
 ################################################################################
@@ -720,17 +726,7 @@ print(p_spatial_beta)
 ################################################################################
 
 ggsave(
-  filename = "Spatial_Beta_Basin_Permutation.png",
-  plot = p_spatial_beta,
-  width = 14,
-  height = 10,
-  units = "in",
-  dpi = 600,
-  bg = "white"
-)
-
-ggsave(
-  filename = "Spatial_Beta_Basin_Permutation.tiff",
+  filename = "FIGURE_4_Spatial_Beta_Basin_Permutation.tiff",
   plot = p_spatial_beta,
   width = 14,
   height = 10,

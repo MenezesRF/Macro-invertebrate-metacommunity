@@ -1,7 +1,14 @@
+## MENEZES et al. (Freshwater Biology manuscript)
+# The scripts below should be run after the scripts in the file "P2_spatial_beta_permutation_test.R".
+
 ################################################################################
 ##
-##  P2: TEMPORAL BETA DIVERSITY — ERN vs IRN
-##. Figure: Figure 5
+##  DESCRIPTION:
+##  Codes for testing P2 and generating FIGURE 5, that spatial β-diversity is higher ##  in ERN than in IRN whereas temporal β-diversity is lower in ERN than in IRN
+##  
+################################################################################
+##
+##  TEMPORAL BETA DIVERSITY — ERN vs IRN
 ##
 ##  Temporal beta is calculated for the SAME SITE across CONSECUTIVE
 ##  sampling occasions (1st->2nd, 2nd->3rd, ...). Sites do NOT need
@@ -520,19 +527,8 @@ print(p_temporal_box)
 ################################################################################
 ## 12. SAVE FIGURE
 ################################################################################
-
 ggsave(
-  filename = "Temporal_Beta_Basin_Permutation.png",
-  plot = p_temporal_box,
-  width = 14,
-  height = 10,
-  units = "in",
-  dpi = 600,
-  bg = "white"
-)
-
-ggsave(
-  filename = "Temporal_Beta_Basin_Permutation.tiff",
+  filename = "FIGURE_5_Temporal_Beta_Basin_Permutation.tiff",
   plot = p_temporal_box,
   width = 14,
   height = 10,

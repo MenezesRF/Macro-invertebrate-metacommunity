@@ -1,6 +1,14 @@
+## MENEZES et al. (Freshwater Biology manuscript)
+
+################################################################################
+# DESCRIPTION: 
+# Codes for testing P1 and generating FIGURE 3, which predicts that α-diversity 
+# would be higher in the IRN than in the ERN because greater hydrological connectivity and longer flowing periods promote higher local species richness.
+# These codes are used to perform two-way ANOVAs for density, q0, q1, and q2.
+################################################################################
+
 ############################################################
 ## ALPHA DIVERSITY + DENSITY — TYPE III ANOVA
-## IMPROVED MODEL-BASED FIGURE (v2)
 ############################################################
 #
 # Same analysis pipeline as before.
@@ -21,16 +29,15 @@ rm(list = ls())
 ## 0. PACKAGES
 ############################################################
 
-library(readxl)
-library(dplyr)
-library(tidyr)
-library(ggplot2)
-library(vegan)
-library(car)
-library(emmeans)
-library(openxlsx)
-library(grid)
-
+library(readxl) #readxl — imports data from Excel files (.xlsx).
+library(dplyr) #dplyr — facilitates data manipulation, including filtering, selecting, transforming, grouping, and summarizing variables.
+library(tidyr) # tidyr — reshapes and reorganizes datasets between wide and long formats.
+library(ggplot2) # ggplot2 — generates the figures and graphical outputs.
+library(vegan) # vegan — provides functions for ecological analyses, including multivariate community analyses and permutation-based tests.
+library(car) # car — provides functions for statistical analyses and model diagnostics, including ANOVA procedures.
+library(emmeans) # emmeans — calculates estimated marginal means and performs pairwise comparisons among model factors or their combinations.
+library(openxlsx) # openxlsx — reads from and writes to Excel workbooks and is used to export statistical results and tables.
+library(grid) # grid — provides low-level graphical functions used to arrange and customize elements within figures.
 
 ############################################################
 ## 1. READ DATA
@@ -699,7 +706,7 @@ print(figure_alpha_v2)
 ## 20. SAVE FIGURE
 ############################################################
 ggsave(
-  filename = "Alpha_Diversity_Figure_v2.tiff",
+  filename = "FIGURE_3_Alpha_Diversity.tiff",
   plot     = figure_alpha_v2,
   width    = 9.3,
   height   = 9.8,
@@ -748,7 +755,7 @@ write.xlsx(
     Analysis_Data_Aerial       = aerial_dat,
     Analysis_Data_Purely_Aquatic = aquatic_dat
   ),
-  file      = "Alpha_Diversity_TypeIII_ANOVA_v2.xlsx",
+  file      = "Alpha_Diversity_TypeIII_ANOVA.xlsx",
   overwrite = TRUE
 )
 

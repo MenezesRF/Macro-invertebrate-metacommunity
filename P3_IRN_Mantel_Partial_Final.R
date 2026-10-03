@@ -1,5 +1,15 @@
+## MENEZES et al. (Freshwater Biology manuscript)
+
+################################################################################
+##
+##  DESCRIPTION:
+##  Codes for testing P3 and generating FIGURE 7, that species dispersal and  
+##  species sorting alternate temporally in the IRN, whereas species sorting 
+##  dominates in the ERN due to prolonged flow cessation 
+
+
 # ================================================================
-# IRN-ONLY MANTEL + PARTIAL MANTEL ANALYSIS  (simplified version)
+# IRN-ONLY MANTEL + PARTIAL MANTEL ANALYSIS
 #
 # Macroinvertebrate beta diversity versus:
 #   1. Environmental distance
@@ -783,7 +793,7 @@ p4_base1 <- ggplot(
 print(p4_base1)
 
 ggsave(
-  filename = "IRN_Partial_Mantel.tiff",
+  filename = "FIGURE_7_IRN_Partial_Mantel.tiff",
   plot = p4_base1,
   width = 12,
   height = 8,
