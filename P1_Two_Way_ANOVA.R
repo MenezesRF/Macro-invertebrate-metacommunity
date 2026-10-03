@@ -3,7 +3,8 @@
 ################################################################################
 # DESCRIPTION: 
 # Codes for testing P1 and generating FIGURE 3, which predicts that α-diversity 
-# would be higher in the IRN than in the ERN because greater hydrological connectivity and longer flowing periods promote higher local species richness.
+# would be higher in the IRN than in the ERN because greater hydrological
+# connectivity and longer flowing periods promote higher local species richness.
 # These codes are used to perform two-way ANOVAs for density, q0, q1, and q2.
 ################################################################################
 
